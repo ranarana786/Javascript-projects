@@ -1,0 +1,55 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+/* .modal-body {
+  position: relative;
+  padding: 24px 24px 20px 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 40px auto;
+  box-sizing: border-box;
+} */
+
+/* Close button at top-right */
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.close-btn:hover {
+  background-color: #d32f2f;
+  transform: scale(1.1);
+}
+
+/* Make sure content doesn't get too close to close button */
+.content {
+  margin-top: 48px; /* space from top so it doesn't clash with close button */
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
